@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+venv/
+env/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+# Bytecode
+*.pyc
+
+# Migrations (optional if auto-generated)
+migrations/__pycache__/
+migrations/versions/__pycache__/
+
+# OS files
+.DS_Store
+Thumbs.db
