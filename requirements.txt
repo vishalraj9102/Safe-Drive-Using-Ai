@@ -4,4 +4,5 @@ flask_migrate
 python-dotenv
 gunicorn
 flask-jwt-extended      
-werkzeug               
+werkzeug       
+redis        
