@@ -12,6 +12,7 @@ services:
       - DATABASE_URL=postgresql://postgres:root@db:5432/safedrive
       - REDIS_HOST=redis
       - REDIS_PORT=6379
+      - GOOGLE_API_KEY=AlzaSyaJ4IYEVTHw7le73725wbbLS23xKmr
     volumes:
       - .:/app
     depends_on:
