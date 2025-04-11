@@ -12,8 +12,12 @@ map_bp = Blueprint("map", __name__)
 GOMAPS_API_BASE = "https://maps.gomaps.pro/maps/api"
 GOMAPS_API_KEY = os.getenv("GOOGLE_API_KEY")
 
-# Setup Redis client
-redis_client = redis.Redis(host='localhost', port=6379, db=0, decode_responses=True)
+redis_client = redis.Redis(
+    host=os.getenv("REDIS_HOST", "redis"),
+    port=int(os.getenv("REDIS_PORT", 6379)),
+    db=0,
+    decode_responses=True
+)
 
 @map_bp.route("/search_place_details", methods=["GET"])
 def search_place_details():

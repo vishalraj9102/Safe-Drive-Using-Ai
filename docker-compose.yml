@@ -10,9 +10,9 @@ services:
       - FLASK_ENV=development
       - FLASK_APP=run.py
       - DATABASE_URL=postgresql://postgres:root@db:5432/safedrive
-      - REDIS_HOST=redis
+      - REDIS_HOST=redis  # ✅ use service name
       - REDIS_PORT=6379
-      - GOOGLE_API_KEY=AlzaSyaJ4IYEVTHw7le73725wbbLS23xKmr
+      - GOOGLE_API_KEY=AlzaSyaJ4IYEVTHw7le73725wbbLS23xKmroBrD
     volumes:
       - .:/app
     depends_on:
