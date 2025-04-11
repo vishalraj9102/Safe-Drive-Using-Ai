@@ -5,4 +5,8 @@ python-dotenv
 gunicorn
 flask-jwt-extended      
 werkzeug       
-redis        
+redis      
+psycopg2-binary
+redis
+requests
+
